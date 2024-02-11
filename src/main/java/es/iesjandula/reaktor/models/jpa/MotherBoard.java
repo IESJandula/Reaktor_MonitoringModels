@@ -20,12 +20,15 @@ public class MotherBoard
 {
 	@Id
 	@Column(length = 10)
+	/**Numero de serie del ordenador */
 	private Long serialNumber;
 	
 	@OneToMany(mappedBy = "motherBoard")
+	/**Lista de tareas a ejecutar */
 	private List<Task> taskList;
 	
 	@OneToMany(mappedBy = "id")
+	/**Lista de usb que posee el ordenador */
 	private List<USB> usbList;
 	
 

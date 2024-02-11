@@ -20,15 +20,19 @@ public class Action
 {
 	@Id
 	@Column(length = 100)
+	/**Nombre de la accion */
 	private String name;
 	
 	@Column(length = 100)
+	/**Comando a ejecutar en linux */
 	private String commandL;
 	
 	@Column(length = 100)
+	/**Comando a ejecutar en windows */
 	private String commandW;
 	
 	@OneToMany(mappedBy = "action")
+	/**Lista de tareas */
 	private List<Task> taskList;
 	
 }

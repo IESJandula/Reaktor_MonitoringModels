@@ -15,16 +15,16 @@ import lombok.NoArgsConstructor;
 public class TaskId implements Serializable
 {
 	/**
-	 * 
+	 * Serial version
 	 */
 	private static final long serialVersionUID = -2686153173707368266L;
-	
+	/**Id de la accion a realizar */
 	private String actionId;
-	
+	/**Fecha de la realizacion de la accion */
 	private Date date;
-	
+	/**Informacion adicional sobre la accion */
 	private String info;
-	
+	/**Serial number de la placa base */
 	private Long motherBoardId;
 
 }

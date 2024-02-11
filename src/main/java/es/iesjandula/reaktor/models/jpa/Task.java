@@ -20,19 +20,23 @@ import lombok.NoArgsConstructor;
 public class Task 
 {
 	@EmbeddedId
+	/**Id emmebido */
 	private TaskId taskId;
 	
 	@Column(length = 10)
+	/**Informacion de la tarea ( esta realizada, da error, etc ) */
 	private Status status;
 	
 	@ManyToOne
 	@JoinColumn(name = "motherBoardId")
 	@MapsId("motherBoardId")
+	/**Placa base en la que se ejecuta la tarea */
 	private MotherBoard motherBoard;
 	
 	@ManyToOne
 	@JoinColumn(name = "actionId")
 	@MapsId("actionId")
+	/**Accion de la tarea */
 	private Action action;
 
 }
