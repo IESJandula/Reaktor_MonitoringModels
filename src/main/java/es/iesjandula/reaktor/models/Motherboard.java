@@ -1,12 +1,22 @@
 package es.iesjandula.reaktor.models;
 
-import jakarta.persistence.*;
-import lombok.*;
-import org.springframework.stereotype.Component;
+import java.util.Date;
+import java.util.List;
+import java.util.Set;
+
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.Set;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author Neil Hdez
@@ -96,4 +106,7 @@ public class Motherboard
     @OneToMany(mappedBy = "motherBoardSerialNumber", cascade = CascadeType.ALL)
     private Set<MotherboardMalware> malware;
 
+    @OneToMany(mappedBy = "motherboard")
+    private List<Task> tasks;
+    
 }
