@@ -58,6 +58,13 @@ public class Motherboard
     @Column(nullable = false)
     private String trolley;
     
+    /**
+     * Attribute - floor of motherboard
+     */
+    @Column(nullable = false, length = 1)
+    private Integer floor;
+    
+    
     /** Attribute andaluciaId*/
     @Column(nullable = false)
     private String andaluciaId;

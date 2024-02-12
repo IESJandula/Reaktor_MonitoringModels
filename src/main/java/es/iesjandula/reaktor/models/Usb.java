@@ -25,7 +25,7 @@ public class Usb
 	private Boolean active;
 	
 	@Column(nullable = false)
-	private String Type;
+	private String type;
 	
 	@ManyToOne
 	Motherboard motherboard;

@@ -16,17 +16,20 @@ import lombok.NoArgsConstructor;
 public class Action
 {
 	
-	public static final String TODO = "TO DO";
+	public static final String STATUS_TODO = "TO DO";
+	public static final String STATUS_IN_PROGRESS= "IN PROGRESS";
+	public static final String STATUS_DONE = "DONE";
+	public static final String STATUS_FAILURE = "FAILURE";
 
 	@Id
 	@Column
 	private String name;
 	
 	@Column
-	private String command_Windows;
+	private String commandWindows;
 	
 	@Column
-	private String command_Linux;
+	private String commandLinux;
 	
 
 }

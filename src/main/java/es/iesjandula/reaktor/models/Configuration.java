@@ -31,6 +31,12 @@ public class Configuration
      */
     private String trolley;
     
+    /**
+     * - ATTRIBUTES -
+     * This attributes are used to create the configuration of the floor
+     */
+    private Integer floor;
+    
     /** Attribute andaluciaId*/
     private String andaluciaId;
     
