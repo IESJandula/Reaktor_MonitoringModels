@@ -15,13 +15,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="motherBoard")
+@Table(name="motherboard_jpa")
 public class MotherBoard 
 {
 	@Id
 	@Column(length = 10)
 	/**Numero de serie del ordenador */
-	private Long serialNumber;
+	private String serialNumber;
 	
 	@OneToMany(mappedBy = "motherBoard")
 	/**Lista de tareas a ejecutar */

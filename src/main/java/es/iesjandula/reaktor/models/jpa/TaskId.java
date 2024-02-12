@@ -25,6 +25,6 @@ public class TaskId implements Serializable
 	/**Informacion adicional sobre la accion */
 	private String info;
 	/**Serial number de la placa base */
-	private Long motherBoardId;
+	private String motherBoardId;
 
 }

@@ -1,6 +1,5 @@
 package es.iesjandula.reaktor.models.jpa;
 
-import es.iesjandula.reaktor.models.Status;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
