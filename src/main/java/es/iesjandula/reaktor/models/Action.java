@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "action")
 public class Action
 {
+	
+	public static final String TODO = "TO DO";
 
 	@Id
 	@Column
