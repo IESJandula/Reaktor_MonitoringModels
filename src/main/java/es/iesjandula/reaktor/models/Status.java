@@ -1,6 +1,7 @@
 package es.iesjandula.reaktor.models;
 
 import es.iesjandula.reaktor.exceptions.ComputerError;
+import es.iesjandula.reaktor.models.DTO.TaskDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,4 +28,6 @@ public class Status {
      * This attributes have the error
      */
 	private ComputerError error;
+	
+	private TaskDTO taskDTO;
 }
