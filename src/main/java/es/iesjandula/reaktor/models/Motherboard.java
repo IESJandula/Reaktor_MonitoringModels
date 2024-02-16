@@ -49,20 +49,20 @@ public class Motherboard
     /**
      * Attribute - classroom of motherboard
      */
-    @Column(nullable = false)
+    @Column
     private String classroom;
 
     /**
      * Attribute - trolley of motherboard
      */
-    @Column(nullable = false)
+    @Column
     private String trolley;
     
     /**
      * Attribute - floor of motherboard
      */
-//    @Column(nullable = false, length = 1)
-//    private Integer floor;
+    @Column
+    private Integer floor;
     
     
     /** Attribute andaluciaId*/
@@ -76,7 +76,7 @@ public class Motherboard
     /**
      * Attribute - teacher of motherboard
      */
-    @Column(nullable = false)
+    @Column
     private String teacher;
     
     /** Attribute computerSerialNumber*/
