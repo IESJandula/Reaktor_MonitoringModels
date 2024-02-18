@@ -9,25 +9,23 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Status {
+public class Status
+{
 
 	/**
-     * - ATTRIBUTES -
-     * This attributes have the statusInfo
-     */
+	 * - ATTRIBUTES - This attributes have the statusInfo
+	 */
 	private String statusInfo;
-	
+
 	/**
-     * - ATTRIBUTES -
-     * This attributes have the status
-     */
+	 * - ATTRIBUTES - This attributes have the status
+	 */
 	private Boolean status;
-	
+
 	/**
-     * - ATTRIBUTES -
-     * This attributes have the error
-     */
+	 * - ATTRIBUTES - This attributes have the error
+	 */
 	private ComputerError error;
-	
+
 	private TaskDTO taskDTO;
 }

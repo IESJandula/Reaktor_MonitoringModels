@@ -1,10 +1,12 @@
 package es.iesjandula.reaktor.models;
 
+import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Id.PartitionId;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,6 +19,7 @@ import lombok.Setter;
 @Table(name = "partition_hard_disk")
 @Getter
 @Setter
+@Data
 public class Partition
 {
 

@@ -3,10 +3,13 @@ package es.iesjandula.reaktor.exceptions;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.Data;
+
 /**
  * @author David Martinez
  *
  */
+@Data
 public class ComputerError extends Exception
 {
 	/** Attribute serialVersionUID*/

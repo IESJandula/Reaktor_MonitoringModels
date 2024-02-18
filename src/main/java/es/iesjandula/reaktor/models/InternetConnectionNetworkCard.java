@@ -4,11 +4,13 @@ import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
 
+import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Id.InternetConnectionNetworkCardId;
 
 /**
@@ -20,6 +22,7 @@ import es.iesjandula.reaktor.models.Id.InternetConnectionNetworkCardId;
 @Table(name = "internet_connection_network_card")
 @Getter
 @Setter
+@Data
 public class InternetConnectionNetworkCard
 {
 

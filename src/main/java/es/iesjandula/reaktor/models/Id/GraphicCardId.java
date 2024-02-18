@@ -6,6 +6,7 @@ import lombok.*;
 import java.io.Serial;
 import java.io.Serializable;
 
+import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Motherboard;
 
 /**
@@ -13,6 +14,7 @@ import es.iesjandula.reaktor.models.Motherboard;
  * @version 1.0.0
  * @since 03/02/2023
  */
+
 @Embeddable
 @Getter
 @Setter
