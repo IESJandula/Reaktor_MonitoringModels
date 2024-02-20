@@ -44,12 +44,16 @@ public class Configuration
     private String computerNumber;
     
     /** Attribute computerSerialNumber*/
+    private String serialNumber;
+    
+    /** Attribute computerSerialNumber*/
     private String computerSerialNumber;
-
+    
     /**
      * - ATTRIBUTES -
      * This attributes are used to create the configuration of the admin
      */
+    /** Attribute isAdmin*/
     private Boolean isAdmin;
     
     /**
