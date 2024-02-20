@@ -2,6 +2,7 @@ package es.iesjandula.reaktor.models.Id;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.ManyToOne;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +17,7 @@ import es.iesjandula.reaktor.models.NetworkCard;
  * @version 1.0.0
  * @since 04/02/2023
  */
+@Data
 @Embeddable
 @Getter
 @Setter

@@ -1,7 +1,6 @@
 package es.iesjandula.reaktor.models.DTO;
 
-import java.sql.Date;
-
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,13 +8,20 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TaskDTO 
+public class TaskDTO
 {
+	/** Attribute - name */
 	private String name;
 	
-	private Date date;
+	/** Attribute - commandWindows */
+	private String commandWindows;
 	
-	private String command_L;
+	/** Attribute - commandLinux */
+	private String commandLinux;
 	
+	/** Attribute - info */
 	private String info;
+	
+	/** Attribute - date */
+	private Date date;
 }

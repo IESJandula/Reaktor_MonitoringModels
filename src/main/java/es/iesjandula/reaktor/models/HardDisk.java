@@ -1,7 +1,9 @@
 package es.iesjandula.reaktor.models;
 
+import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Id.HardDiskId;
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +16,7 @@ import lombok.Setter;
 @Table(name = "hard_disk")
 @Getter
 @Setter
+@Data
 public class HardDisk
 {
 

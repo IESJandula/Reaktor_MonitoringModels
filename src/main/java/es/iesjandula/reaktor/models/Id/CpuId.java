@@ -4,11 +4,13 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
 
+import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Motherboard;
 
 /**
@@ -17,6 +19,7 @@ import es.iesjandula.reaktor.models.Motherboard;
 @AllArgsConstructor
 @NoArgsConstructor
 @Embeddable
+@Data
 public class CpuId implements Serializable
 {
 
