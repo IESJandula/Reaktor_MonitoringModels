@@ -14,43 +14,60 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ComputerError extends Exception
 {
-	/** Attribute serialVersionUID*/
+	/** Serial version para identificar la excepcion */
 	private static final long serialVersionUID = -628975777962427933L;
 
-	/**
-	 * - ATTRIBUTES - This attributes have the code
-	 */
+	/**Codigo del error cometido */
 	private int code;
 
-	/**
-	 * - ATTRIBUTES - This attributes have the text
-	 */
+	/**Descripcion del error cometido */
 	private String text;
-
+	
+	/**Causa externa del error cometido */
+	private Exception exception;
 	
 	/**
-	 * Constructor for create new ComputerError
-	 * @param code the code
-	 * @param text the text
-	 * @param exception for the possible exception
+	 * Constructor que crea la excepcion del proyecto usando un codigo de error
+	 * un mensaje como descripcion y una causa externa
+	 * @param code
+	 * @param text 
+	 * @param exception 
 	 */
 	public ComputerError(int code, String text,Exception exception) 
 	{
 		super(text,exception);
 		this.code=code;
 		this.text=text;
+		this.exception = exception;
+	}
+	/**
+	 * Constructor que crea la excepcion del proyecto usando un codigo de error 
+	 * y un mensaje como descripcion
+	 * @param code
+	 * @param text
+	 */
+	public ComputerError(int code,String text)
+	{
+		super(text);
+		this.code = code;
+		this.text = text;
 	}
 	
 	/**
-	 * Method toMap
-	 * @return Map<String,String> mapException
+	 * Metodo que mapea el error para mostrarlo de forma ordenada al cliente
+	 * @return Mapa organizado en clave valor <String,String> que devuelve como clave el nombre del atributo y como valor el valor del mismo
 	 */
 	public Map<String,String> toMap()
 	{
 		Map<String,String> mapException = new HashMap<String,String>();
 		
-		mapException.put("code", String.valueOf(this.code));
-		mapException.put("text", this.text);
+		mapException.put("codigo", String.valueOf(this.code));
+		mapException.put("descripcion", this.text);
+		
+		if(this.exception!=null)
+		{
+			mapException.put("causa", this.exception.getMessage());
+		}
 		
 		return mapException;
 	}
