@@ -1,5 +1,7 @@
 package es.iesjandula.reaktor.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import es.iesjandula.reaktor.models.Id.TaskId;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -32,5 +34,6 @@ public class Task
 	
 	@ManyToOne
 	@MapsId("serialNumber")
+	@JsonIgnore
 	private Motherboard motherboard;
 }
