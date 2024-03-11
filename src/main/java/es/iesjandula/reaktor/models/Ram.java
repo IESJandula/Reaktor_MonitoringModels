@@ -1,6 +1,5 @@
 package es.iesjandula.reaktor.models;
 
-import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Id.RamId;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;

@@ -1,6 +1,5 @@
 package es.iesjandula.reaktor.models;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

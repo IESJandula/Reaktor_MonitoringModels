@@ -1,6 +1,5 @@
 package es.iesjandula.reaktor.models;
 
-import es.iesjandula.reaktor.exceptions.ComputerError;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

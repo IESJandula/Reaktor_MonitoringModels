@@ -10,7 +10,6 @@ import lombok.Setter;
 
 import java.util.Date;
 
-import es.iesjandula.reaktor.exceptions.ComputerError;
 import es.iesjandula.reaktor.models.Id.InternetConnectionNetworkCardId;
 
 /**

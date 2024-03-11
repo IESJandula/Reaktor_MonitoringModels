@@ -7,8 +7,6 @@ import lombok.ToString;
 
 import java.util.List;
 
-import es.iesjandula.reaktor.exceptions.ComputerError;
-
 @Getter
 @Setter
 @ToString

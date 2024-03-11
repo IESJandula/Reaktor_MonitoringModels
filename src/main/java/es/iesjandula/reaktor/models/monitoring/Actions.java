@@ -1,6 +1,5 @@
 package es.iesjandula.reaktor.models.monitoring;
 
-import java.io.File;
 import java.util.List;
 
 import es.iesjandula.reaktor.models.Peripheral;
