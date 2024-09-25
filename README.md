@@ -1,4 +1,4 @@
-# MODELS: Proyecto que guarda todos los modelos guardados en bbdd o usados en clases java de REAKTOR
+# MODELS: Proyecto que guarda todos los modelos guardados en bbdd o usados en clases java de la monitorización de REAKTOR
 
 # Descripción del proyecto
 
